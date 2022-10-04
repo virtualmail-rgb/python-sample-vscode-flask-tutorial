@@ -2,7 +2,7 @@ pipeline {
     agent { label 'free-script-11' }
         stage ('clone') {
             steps {
-                git url: 'https://github.com/virtualmail-rgb/python-sample-vscode-flask-tutorial.git', branch: 'master'
+                git 'https://github.com/virtualmail-rgb/python-sample-vscode-flask-tutorial.git'
             }
         }
         stage ('build') {
