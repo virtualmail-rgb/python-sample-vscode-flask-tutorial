@@ -5,7 +5,7 @@ pipeline {
             steps {
                 git 'https://github.com/virtualmail-rgb/python-sample-vscode-flask-tutorial.git'
             }
-        }
+        }    
         stage (build) {
             steps {
                 sh '''python3 -m pip install --upgrade pip setuptools wheel
